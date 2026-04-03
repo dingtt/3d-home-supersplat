@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "buildCommand": "npm run build",
+  "buildCommand": "BASE_HREF=/3d-tools/supersplat/ npm run build",
   "outputDirectory": "dist"
 }
