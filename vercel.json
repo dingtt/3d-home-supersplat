@@ -2,5 +2,15 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "buildCommand": "BASE_HREF=/3d-tools/supersplat/ npm run build",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/3d-tools/supersplat",
+      "destination": "/"
+    },
+    {
+      "source": "/3d-tools/supersplat/(.*)",
+      "destination": "/$1"
+    }
+  ]
 }
